@@ -4,7 +4,6 @@ class pokemon:
     def __init__(self, code, domein=0):
         self.code = code
         poke = p.findPoke(self.code)
-        print(poke)
         if poke:
             self.name = poke['name']
             self.edit_name = poke['name']
@@ -13,6 +12,9 @@ class pokemon:
             self.sub_type = poke['sub_type']
             self.waza = {}
             self.trainer = ''
+            self.level = 1
+            self.parameter = poke['parameter']
+            print(self.parameter)
         else:
             raise ValueError("存在しないポケだよー")
         
@@ -24,6 +26,10 @@ class pokemon:
         
     def Attack(poke, waza_code):
         print(poke.waza)
+
+class trainer:
+    def __init__(self, id) -> None:
+        self.id  = id
 try:
     condition = True
 except ValueError as e:

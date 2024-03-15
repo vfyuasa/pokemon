@@ -13,5 +13,4 @@ class game:
                 pikatyuu = obj.pokemon(pId)
                 pikatyuu.Detail()
 
-gam = game
 game.start()

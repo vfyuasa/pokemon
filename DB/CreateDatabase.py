@@ -1,3 +1,4 @@
+##廃棄予定
 import sqlite3 as sql
 
 class Databases:
